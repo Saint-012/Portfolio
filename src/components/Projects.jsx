@@ -13,25 +13,36 @@ const projects = [
     link: { icon: 'ti-lock', label: 'Private repo' },
   },
   {
+    cls: 'pc4',
+    type: 'AI · Tool',
+    title: 'AI Caption Generator',
+    status: 'live',
+    statusLabel: 'Live',
+    desc: 'An AI-powered tool that generates ready-to-post captions for social media — built for creators and small businesses who need quick, on-brand content.',
+    impact: 'Turns a topic and platform into multiple caption options in seconds, powered by AI.',
+    tech: ['AI', 'React', 'API'],
+    link: { icon: 'ti-external-link', label: 'View live', url: 'https://ai-caption-rho.vercel.app/' },
+  },
+  {
     cls: 'pc2',
     type: 'Web · Platform',
     title: 'Social Betting Platform',
-    status: 'live',
-    statusLabel: 'Shipped',
-    desc: 'A social-first platform where users engage, compete, and interact around predictions in real time.',
-    impact: 'Full social prediction platform built end-to-end from scratch.',
+    status: 'wip',
+    statusLabel: 'Built, not yet deployed',
+    desc: 'A social-first platform where users engage, compete, and interact around predictions in real time. Built solo using AI-assisted development.',
+    impact: 'Full prediction platform built end-to-end — frontend, backend, and social features. Deployment pending.',
     tech: ['Fullstack', 'Social', 'Web'],
     link: { icon: 'ti-lock', label: 'Private repo' },
   },
   {
     cls: 'pc3',
-    type: 'App · In Development',
+    type: 'Tool · Concept',
     title: 'Ghosttrace',
     status: 'wip',
     statusLabel: 'In progress',
-    desc: 'Currently in active development. Something interesting is brewing — details dropping soon.',
-    impact: 'Watch this space. Dropping soon.',
-    tech: ['App', 'WIP'],
+    desc: 'A utility tool currently in early development — the core build is underway while the exact use case is being refined.',
+    impact: 'Early-stage build. Direction and final use case still being shaped.',
+    tech: ['Tool', 'WIP'],
     link: { icon: 'ti-clock', label: 'Coming soon' },
   },
 ]
@@ -57,7 +68,13 @@ function Projects() {
               ))}
             </div>
             <div className="project-links">
-              <span className="plink"><i className={`ti ${p.link.icon}`} aria-hidden="true"></i> {p.link.label}</span>
+              {p.link.url ? (
+                <a className="plink" href={p.link.url} target="_blank" rel="noopener noreferrer">
+                  <i className={`ti ${p.link.icon}`} aria-hidden="true"></i> {p.link.label}
+                </a>
+              ) : (
+                <span className="plink"><i className={`ti ${p.link.icon}`} aria-hidden="true"></i> {p.link.label}</span>
+              )}
             </div>
           </div>
         ))}

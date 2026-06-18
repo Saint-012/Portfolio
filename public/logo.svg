@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="sgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7850ff"/>
+      <stop offset="100%" stop-color="#00b478"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="#0d0d10" stroke="url(#sgrad)" stroke-width="3"/>
+  <text x="100" y="138" text-anchor="middle" font-family="Georgia, serif" font-size="90" font-weight="700" fill="url(#sgrad)">S</text>
+</svg>

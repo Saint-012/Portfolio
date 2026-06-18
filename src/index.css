@@ -31,6 +31,7 @@ body { background:var(--bg); color:#f0f0f0; font-family:var(--font); min-height:
 
 /* NAV */
 nav{position:sticky;top:0;z-index:100;display:flex;justify-content:center;gap:2.5rem;padding:1.2rem 2rem;border-bottom:0.5px solid rgba(255,255,255,0.08);background:rgba(13,13,16,0.94);backdrop-filter:blur(14px);}
+.nav-logo{width:28px;height:28px;position:absolute;left:2rem;top:50%;transform:translateY(-50%);}
 nav a{font-family:var(--mono);font-size:10px;color:#666;text-decoration:none;letter-spacing:.18em;text-transform:uppercase;transition:color .2s;}
 nav a:hover{color:rgba(120,80,255,0.9);}
 
