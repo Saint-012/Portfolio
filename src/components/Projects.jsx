@@ -75,6 +75,24 @@ const projects = [
     },
   },
   {
+    cls: 'pc7',
+    accent: 'pink',
+    type: 'AI · Bot',
+    title: 'S.A.R. Bot',
+    status: 'live',
+    statusLabel: 'Live',
+    desc: 'An AI-powered auto-reply bot that responds to Telegram DMs with a custom persona — sassy, smart, and unbothered. Powered by Groq.',
+    impact: 'Fully automated AI replies 24/7 — no human needed, no message left on read.',
+    tech: ['Node.js', 'Telegram', 'Groq', 'AI'],
+    link: { icon: 'ti-external-link', label: 'Try the bot', url: 'https://t.me/SaintAutoReplyBot_bot' },
+    detail: {
+      problem: 'Managing DMs and comments at scale is exhausting — especially for creators and small brands. Every unanswered message is a missed connection, but nobody has time to be online 24/7.',
+      solution: 'Built S.A.R. (Saint Auto Reply) Bot — a Telegram bot powered by Groq AI that automatically reads incoming messages and fires back with a smart, on-brand response. The bot runs a fully customizable persona, so it replies exactly how you want it to.',
+      challenges: 'The main challenge was making AI replies feel human and natural — not robotic or generic. Spent time crafting a persona prompt that gave the bot a real personality: confident, nonchalant, a little sassy. Also handled deployment on a zero-cost stack that keeps the bot alive 24/7.',
+      outcome: 'Live and running on Render. Replies to any DM instantly with AI-generated responses. Fully customizable persona — any brand or creator can swap in their own voice in minutes.',
+    },
+  },
+  {
     cls: 'pc2',
     accent: 'green',
     type: 'Web · Platform',
@@ -136,6 +154,12 @@ const accentMap = {
     pill: { bg: 'rgba(0,220,180,0.09)', border: 'rgba(0,220,180,0.25)', color: 'rgba(0,220,180,0.85)' },
     highlight: { bg: 'rgba(0,220,180,0.07)', border: 'rgba(0,220,180,0.18)', color: 'rgba(0,220,180,0.8)' },
     label: 'rgba(0,220,180,0.35)',
+  },
+  pink: {
+    type: 'rgba(255,80,180,0.8)',
+    pill: { bg: 'rgba(255,80,180,0.09)', border: 'rgba(255,80,180,0.25)', color: 'rgba(255,80,180,0.85)' },
+    highlight: { bg: 'rgba(255,80,180,0.07)', border: 'rgba(255,80,180,0.18)', color: 'rgba(255,80,180,0.8)' },
+    label: 'rgba(255,80,180,0.35)',
   },
 }
 

@@ -45,6 +45,11 @@
 .pc6 .ptype{color:rgba(0,220,180,0.8);}
 .pc6 .impact{color:rgba(0,220,180,0.8);background:rgba(0,220,180,0.07);border:0.5px solid rgba(0,220,180,0.18);}
 .pc6 .tech-pill{background:rgba(0,220,180,0.09);border:0.5px solid rgba(0,220,180,0.25);color:rgba(0,220,180,0.85);}
+.pc7{background:#1a1a1e;border:0.5px solid rgba(255,80,180,0.3);}
+.pc7 .pc-glow{background:rgba(255,80,180,0.15);}
+.pc7 .ptype{color:rgba(255,80,180,0.8);}
+.pc7 .impact{color:rgba(255,80,180,0.8);background:rgba(255,80,180,0.07);border:0.5px solid rgba(255,80,180,0.18);}
+.pc7 .tech-pill{background:rgba(255,80,180,0.09);border:0.5px solid rgba(255,80,180,0.25);color:rgba(255,80,180,0.85);}
 
 /* MODAL */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);z-index:999;display:flex;align-items:center;justify-content:center;padding:1.5rem;}
