@@ -61,6 +61,7 @@ const projects = [
     accent: 'teal',
     type: 'AI · Bot',
     title: 'SmartBook Assistant',
+    image: '/smartbook.png',
     status: 'live',
     statusLabel: 'Live',
     desc: 'An AI-powered Telegram bot that handles FAQs and bookings for small businesses — customers get instant answers and can book appointments without any human needed.',
@@ -79,6 +80,7 @@ const projects = [
     accent: 'pink',
     type: 'AI · Bot',
     title: 'S.A.R. Bot',
+    image: '/sar.png',
     status: 'live',
     statusLabel: 'Live',
     desc: 'An AI-powered auto-reply bot that responds to Telegram DMs with a custom persona — sassy, smart, and unbothered. Powered by Groq.',
@@ -231,6 +233,11 @@ function Projects() {
           {projects.map((p) => (
             <div className={`project-card ${p.cls}`} key={p.title} onClick={() => setActive(p)} style={{ cursor: 'pointer' }}>
               <div className="pc-glow"></div>
+              {p.image && (
+                <div className="pc-image-wrap">
+                  <img src={p.image} alt={p.title} className="pc-image" />
+                </div>
+              )}
               <div className="ptype">{p.type}</div>
               <h3>{p.title}</h3>
               <div className="pstatus">

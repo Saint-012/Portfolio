@@ -8,25 +8,23 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import HowIBuild from './components/HowIBuild'
-import Services from './components/Services'
 import Contact from './components/Contact'
 import useScrollReveal from './useScrollReveal'
 
 function App() {
   useScrollReveal()
 
-  return (
+return (
     <>
       <Background />
       <MatrixRain />
       <Nav />
       <Hero />
       <TrustBar />
+      <Projects />
       <About />
       <Skills />
-      <Projects />
       <HowIBuild />
-      <Services />
       <Contact />
       <footer>© 2026 Saint · Built with intention</footer>
     </>

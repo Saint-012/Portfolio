@@ -21,13 +21,11 @@ function MatrixRain() {
     window.addEventListener('resize', setup)
 
     const chars = '01'
-
     let animationId
 
     const draw = () => {
       ctx.fillStyle = 'rgba(13, 13, 16, 0.08)'
       ctx.fillRect(0, 0, width, height)
-
       ctx.font = '14px "Space Mono", monospace'
 
       for (let i = 0; i < columns; i++) {
@@ -42,9 +40,7 @@ function MatrixRain() {
 
         ctx.fillText(char, x, y)
 
-        if (y > height && Math.random() > 0.975) {
-          drops[i] = 0
-        }
+        if (y > height && Math.random() > 0.975) drops[i] = 0
         drops[i]++
       }
 
@@ -53,8 +49,18 @@ function MatrixRain() {
 
     draw()
 
+    const handleScroll = () => {
+      const heroHeight = window.innerHeight
+      const scrollY = window.scrollY
+      const fade = Math.max(0, 1 - scrollY / (heroHeight * 0.6))
+      canvas.style.opacity = fade * 0.18
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
     return () => {
       window.removeEventListener('resize', setup)
+      window.removeEventListener('scroll', handleScroll)
       cancelAnimationFrame(animationId)
     }
   }, [])

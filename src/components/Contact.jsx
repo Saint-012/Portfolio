@@ -5,7 +5,7 @@ function Contact() {
     <section id="contact">
       <div className="sec-label">Contact</div>
       <p className="about-text" style={{ marginBottom: '1.5rem' }}>
-        Got a project, idea, or collab? Let's build something together.
+        I build bots, tools, and web apps that solve real problems. If you have something worth building — let's talk.
       </p>
       <div className="contact-btns">
         <a className="cbtn" href="mailto:emmanueldaviddm@gmail.com">
